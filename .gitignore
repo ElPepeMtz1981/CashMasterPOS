@@ -1,0 +1,23 @@
+# Build
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+
+# ASP.NET
+appsettings.*.json
+
+# Logs
+*.log
+
+# Others
+*.DS_Store
+*.pdb

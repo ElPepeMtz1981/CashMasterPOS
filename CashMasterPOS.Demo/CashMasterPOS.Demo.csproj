@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BussinesLogic\**" />
+    <Compile Remove="Exceptions\**" />
+    <EmbeddedResource Remove="BussinesLogic\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <None Remove="BussinesLogic\**" />
+    <None Remove="Exceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration.cs" />
+    <Compile Remove="Currency.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CashMasterPOS\CashMasterPOS.csproj" />
+  </ItemGroup>
+
+</Project>
